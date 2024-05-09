@@ -176,10 +176,44 @@
   .Pie-pag__redes{
     display: flex;
     flex-wrap: wrap;
-     margin-top: 150px;
+    margin-top: 150px;
     margin-left: 70px;
   
    }
+
+   /*Servicios*/
+
+   .servicios{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+   }
+
+   .servicios__caja{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 10px;
+    background-color: #860680;
+    justify-content: center;
+    border-radius: 10px;
+   }
+
+   .servicios__caja img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    border-radius: 10px;
+    margin: 10px;
+
+
+   }
+
+   .servicios p{
+    margin-left: 10px;
+   }
+
   .nosotros p{
    font-style: italic;
    font-weight: bold;
