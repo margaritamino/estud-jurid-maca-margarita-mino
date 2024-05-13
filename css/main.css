@@ -51,9 +51,9 @@ footer {
 
 .nosotros-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.7fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 1fr 0.2fr;
-  grid-template-areas: "encab encab encab" "nosotros nosotros nosotros" "pie-nosotros pie-nosotros pie-nosotros";
+  grid-template-areas: "encab" "nosotros" "pie-nosotros";
 }
 
 .nosotros-grid header {
@@ -89,6 +89,7 @@ footer {
 /*main cursos*/
 .titulos__principal {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
   color: #6b0768;
@@ -118,9 +119,16 @@ footer {
 }
 
 /*main nosotros*/
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .nosotros p {
   font-style: italic;
   font-weight: bold;
+  justify-content: center;
 }
 
 /*index aside*/
@@ -138,6 +146,7 @@ footer {
 }
 .servicios__asesoramiento p {
   flex-wrap: wrap;
+  margin-top: none;
   margin-bottom: 20px;
 }
 .servicios__caja {
@@ -164,6 +173,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-top: 70px;
+  margin-bottom: none;
 }
 .pie-pag__fimg img {
   display: flex;

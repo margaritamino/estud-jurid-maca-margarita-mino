@@ -2,19 +2,18 @@
 .servicios{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    @include margentb (50px, 20px);
     &__titulo-serv
        h2{
       flex-wrap: wrap;
-      margin-top: 50px;
-      margin-bottom: 20px;
+      @include margentb (50px, 20px);      
       color: $titulo-secundario;      
     }
     &__asesoramiento 
     p{
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      @include margentb (none, 20px);
+     
     }
 
     &__caja{

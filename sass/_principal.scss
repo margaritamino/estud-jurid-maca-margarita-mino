@@ -3,23 +3,20 @@
 
 .titulos{ 
   &__principal{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+    @include flex-w-c;
+    @include m20;
     color: $tutulo-principal;
   }
 
     &__secundario{
-      margin: 20px;
+      @include m20;
       color: $titulo-secundario;
   
     }
   }
   
   .cursos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-w-c;
     
     &__color-recuadro{
       background-color: $suave;
@@ -39,7 +36,13 @@
   }
 
   /*main nosotros*/
+  .nosotros{
+    @include flex-w-c;   
+  }
   .nosotros p{
+  
     font-style: italic;
     font-weight: bold;
+    justify-content: center;
+    
     }

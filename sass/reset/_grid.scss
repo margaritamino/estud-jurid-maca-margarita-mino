@@ -51,12 +51,12 @@
 
   .nosotros-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 1fr 0.2fr;
     grid-template-areas : 
-    "encab encab encab"
-    "nosotros nosotros nosotros"
-    "pie-nosotros pie-nosotros pie-nosotros"
+    "encab"
+    "nosotros"
+    "pie-nosotros"
     }
   
     .nosotros-grid header{

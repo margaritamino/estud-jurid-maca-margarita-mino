@@ -1,0 +1,14 @@
+@mixin m20{
+    margin: 20px;
+}
+
+@mixin margentb($t, $b){
+    margin-top: $t;
+    margin-bottom: $b;
+}
+
+@mixin flex-w-c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

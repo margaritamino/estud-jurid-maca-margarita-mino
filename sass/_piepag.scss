@@ -2,7 +2,8 @@
 .pie-pag{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 70px;    
+    @include margentb (70px, none);
+       
 
     &__fimg img{
 
