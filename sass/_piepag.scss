@@ -1,0 +1,22 @@
+
+.pie-pag{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;    
+
+    &__fimg img{
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 150px;
+       
+      }
+      &__redes{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;      
+       
+      
+       }
+      
+  }

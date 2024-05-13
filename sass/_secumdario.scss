@@ -1,0 +1,43 @@
+/*index aside*/
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    &__titulo-serv
+       h2{
+      flex-wrap: wrap;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      color: $titulo-secundario;      
+    }
+    &__asesoramiento 
+    p{
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    &__caja{
+      display: flex;
+      flex-wrap: wrap;
+      width: 320px;
+      margin-left: 5px;
+      background-color: $titulo-secundario;
+      justify-content: center;
+      border-radius: 10px;
+      img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 290px;
+        border-radius: 10px;
+        margin: 10px 40px 10px 40px;   
+    
+       }
+
+      }
+      p{
+        margin-left: 10px;
+       }
+
+  }
+

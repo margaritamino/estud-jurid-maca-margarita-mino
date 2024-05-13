@@ -1,0 +1,45 @@
+
+/*main cursos*/
+
+.titulos{ 
+  &__principal{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: $tutulo-principal;
+  }
+
+    &__secundario{
+      margin: 20px;
+      color: $titulo-secundario;
+  
+    }
+  }
+  
+  .cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &__color-recuadro{
+      background-color: $suave;
+      width: 320px;
+      border-radius: 10px;
+      padding: 20px 10px 1px 20px;
+      margin: 10px;
+      &__imagen{
+        width: 280px;
+
+      img{
+          width: 100%
+        }
+      
+    }
+   }
+  }
+
+  /*main nosotros*/
+  .nosotros p{
+    font-style: italic;
+    font-weight: bold;
+    }

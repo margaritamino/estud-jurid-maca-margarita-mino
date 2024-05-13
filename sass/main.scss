@@ -1,0 +1,22 @@
+
+//Reset
+@import "../sass/reset/variables";
+
+@import "./reset/inicio";
+@import "../sass/reset/grid";
+
+//header
+@import "./encabezado";
+
+//main-aside-footer
+@import "./principal";
+@import "./secumdario";
+@import "./piepag";
+
+//mq
+@import "../sass/reset/mediaq";
+
+
+
+
+
