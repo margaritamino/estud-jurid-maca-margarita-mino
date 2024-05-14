@@ -19,7 +19,7 @@
     &__caja{
       display: flex;
       flex-wrap: wrap;
-      width: 320px;
+      width: map-get($dimension,grande );
       margin-left: 5px;
       background-color: $titulo-secundario;
       justify-content: center;
@@ -27,7 +27,7 @@
       img{
         display: flex;
         flex-wrap: wrap;
-        width: 290px;
+        width: map-get($dimension, medio);
         border-radius: 10px;
         margin: 10px 40px 10px 40px;   
     

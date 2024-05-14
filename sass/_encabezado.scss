@@ -10,13 +10,14 @@
     background-color: $color-heder;
      
     img{
-      width: 250px;
+      width: map-get($dimension,peque);
       border-radius: 50%;
       padding-top: 20px;  
       padding-bottom: 20px;
     }  
   
     }
+   
    
 
  
