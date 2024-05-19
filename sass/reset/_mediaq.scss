@@ -12,28 +12,102 @@
       ;
   
     }
+
+    .cursos-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr 0.2fr;
+      grid-template-areas : 
+      "encab encab"
+      "curso curso"
+      "pie-cursos pie-cursos";
+      }
+
+
     .logo img{
       width: 200px;
       border-radius: 50%;
   
     }
-    .cursos__color-recuadro__imagen{
-      width: 180px;  
-  }
-  .cursos__color-recuadro{
-    background-color: #f7cbf4;
+
+    .titulos{
+    &__principal {
+     font-size: 190%;
+    }
+    }
+
+
+    .cursos{
+    &__color-recuadro{
+    background-color: $suave;
     width: 220px;
     border-radius: 10px;
     padding: 20px 1px 20px 20px;
     margin: 10px;
+
+      &__imagen{
+      width: 180px;  
   }
-  .pie-pag__fimg img {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90px;
+}
+}
+  .servicios{
+  &__caja{
+    @include flex-w;
+    width: 290px;
+    margin-left: 5px;
+    background-color: #860680;
+    justify-content: center;
+    border-radius: 10px;
   }
-  }   
   
+  img {
+    @include flex-w;
+    width: 250px;
+    border-radius: 10px;
+ 
+  }
+  p{
+    font-size: 90%;
+  }
+}
+
+  .pie-pag{
+    @include flex-w;
+    @include margentb (70px, none);
+
+  &__fimg img {
+    @include flex-w;
+    margin-left: 200px;
+    width: 110px;
+  }  
+   
+    &__inst {
+      @include margentl (50px, 70px);
+    img{
+      @include im-b-w(10%, 30px);
+      
+       }
+      }
+      &__face {
+        @include margentl (50px, 10px);
+        img{
+          @include im-b-w(10%, 30px);
+
+       }
+       }
+       &__whats {
+        @include margentl (50px, 10px);
+        img{
+          @include im-b-w(10%, 30px);
+
+       }
+       }
+     
+       }
+       }
+  
+  /*Width 576*/
+
   @media(max-width:576px) {
     .pagina-grid{
     grid-template-columns: 1fr;
@@ -45,29 +119,6 @@
     "footer";
   
   }
-  .servicios__titulo-serv h2{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 150px;
-    color: #860680;
-  
-  }
-  
-  }
-  
-  @media(max-width:768px) {
-    .cursos-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.1fr 0.1fr 0.2fr;
-      grid-template-areas : 
-      "encab encab"
-      "curso curso"
-      "pie-cursos pie-cursos";
-      }
-  }
-  
-  @media(max-width:576px) {
     .cursos-grid{
       display: grid;
       grid-template-columns: 1fr;
@@ -77,13 +128,77 @@
       "curso"
       "pie-cursos";
       }
+
+  .servicios{
+  &__titulo-serv 
+  h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+    color: #860680;
   
   }
-  
-  
-          
-  
-  
-   
-    
-  
+}
+  .titulos{
+  &__principal {
+    font-size: 160%;
+   }
+  &__secundario {
+    font-size: 120%;
+   }
+  }
+
+   .servicios{
+   &__caja{
+    @include flex-w;
+    width: 250px;
+    margin-left: 5px;
+    background-color: #860680;
+    justify-content: center;
+    border-radius: 10px;
+   img{
+    @include flex-w;
+    width: 220px;
+    border-radius: 10px;
+ 
+  }
+}
+}
+  .pie-pag{
+    @include flex-w;
+    @include margentb (70px, none);
+       
+
+    &__fimg img{
+
+      @include flex-w;
+      margin-left: 100px;
+      width: 100px;       
+      }    
+    &__inst {
+      @include margentl (20px, 70px);
+    img{
+      @include im-b-w(10%, 20px);
+      
+       }
+      }
+      &__face {
+        @include margentl (20px, 10px);
+        img{
+      @include im-b-w(10%, 20px);
+
+       }
+       }
+       &__whats {
+        @include margentl (20px, 10px);
+        img{
+       @include im-b-w(10%, 20px);
+
+       }
+       }
+
+
+      
+       }
+      
+ }

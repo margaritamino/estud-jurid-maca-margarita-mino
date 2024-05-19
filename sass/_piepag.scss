@@ -9,15 +9,39 @@
 
       display: flex;
       flex-wrap: wrap;
-      width: 150px;
-       
+      margin-left: 300px;
+      width: 130px;       
+      }    
+    &__inst {
+      margin-top: 50px;
+      margin-left: 100px;
+    img{
+      border-radius: 10%;
+      width: 30px;   
+      
+       }
       }
-      &__redes{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;      
-       
+      &__face {
+        margin-top: 50px;
+        margin-left: 10px;
+        img{
+        border-radius: 10%;
+        width: 30px;
+
+       }
+       }
+       &__whats {
+        margin-top: 50px;
+        margin-left: 10px;
+        img{
+        border-radius: 10%;
+        width: 30px;
+
+       }
+       }
+
+
       
        }
       
-  }
+  

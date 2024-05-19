@@ -1,22 +1,23 @@
 /*Encabezado*/
-.header {
-  background-color: $color-heder;
-}
-
   .logo{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: $color-heder;
-     
+
     img{
       width: map-get($dimension,peque);
       border-radius: 50%;
       padding-top: 20px;  
-      padding-bottom: 20px;
-    }  
-  
-    }
+      padding-bottom: 20px;}  
+
+  }
+    
+
+    /*mi estilo bs*/
+  .bg-body-tertiary--m{
+    background-color: $suave;
+  }
    
    
 

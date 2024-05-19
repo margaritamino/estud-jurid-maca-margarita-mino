@@ -12,3 +12,20 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@mixin margentl($t, $l){
+    margin-top: $t;
+    margin-left: $l;
+}
+
+@mixin im-b-w($b, $w){
+    border-radius: $b;
+        width: $w;
+    }
+
+    @mixin flex-w{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+  

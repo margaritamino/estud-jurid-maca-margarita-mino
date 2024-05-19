@@ -6,11 +6,12 @@
     @include flex-w-c;
     @include m20;
     color: $tutulo-principal;
+   
   }
 
-    &__secundario{
-      @include m20;
-      color: $titulo-secundario;
+  &__secundario{
+    @include m20;
+    color: $titulo-secundario;
   
     }
   }
@@ -25,16 +26,17 @@
       padding: 20px 10px 1px 20px;
       margin: 10px;
       &__imagen{
-
         width: map-get($dimension, chico);
-
-      img{
+      
+        img{
           width: 100%
-        }
+        }}
+
+     
       
     }
    }
-  }
+
 
   /*main nosotros*/
   .nosotros{
