@@ -1,7 +1,6 @@
 /*Encabezado*/
   .logo{
-    display: flex;
-    flex-wrap: wrap;
+    @include flex-w;
     justify-content: center;
     background-color: $color-heder;
 

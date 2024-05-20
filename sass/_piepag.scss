@@ -1,14 +1,12 @@
 
 .pie-pag{
-    display: flex;
-    flex-wrap: wrap;
-    @include margentb (70px, none);
+   @include flex-w;
+   @include margentb (70px, none);
        
 
     &__fimg img{
 
-      display: flex;
-      flex-wrap: wrap;
+      @include flex-w;
       margin-left: 300px;
       width: 130px;       
       }    
