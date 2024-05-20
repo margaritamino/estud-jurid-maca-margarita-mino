@@ -1,7 +1,6 @@
 /*index aside*/
 .servicios{
-    display: flex;
-    flex-wrap: wrap;
+    @include flex-w;
     @include margentb (50px, 20px);
     &__titulo-serv
        h2{
@@ -17,16 +16,14 @@
     }
 
     &__caja{
-      display: flex;
-      flex-wrap: wrap;
+      @include flex-w;
       width: map-get($dimension,grande );
       margin-left: 5px;
       background-color: $titulo-secundario;
       justify-content: center;
       border-radius: 10px;
       img{
-        display: flex;
-        flex-wrap: wrap;
+        @include flex-w;
         width: map-get($dimension, medio);
         border-radius: 10px;
         margin: 10px 40px 10px 40px;   
@@ -35,8 +32,7 @@
 
       }
       p{
-        display: flex;
-        flex-wrap: wrap;
+        @include flex-w;
         margin-left: 10px;
       
        }
