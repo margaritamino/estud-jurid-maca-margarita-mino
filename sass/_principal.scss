@@ -2,17 +2,25 @@
 /*main cursos*/
 
 .titulos{ 
-  &__principal{
+  display: flex;
+  flex-direction: column;
+  
+  
+    &__principal{
     @include flex-w-c;
     @include m20;
     color: $tutulo-principal;
-   
+    width: 1000px;
+    align-self: center;
+     
   }
 
   &__secundario{
+    display: flex;
     @include m20;
     color: $titulo-secundario;
-  
+    
+     
     }
   }
   

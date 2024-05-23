@@ -102,19 +102,26 @@ footer {
 }
 
 /*mi estilo bs*/
-.bg-body-tertiary--m {
+.navegador--m {
   background-color: #f7cbf4;
 }
 
 /*main cursos*/
+.titulos {
+  display: flex;
+  flex-direction: column;
+}
 .titulos__principal {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
   color: #6b0768;
+  width: 1000px;
+  align-self: center;
 }
 .titulos__secundario {
+  display: flex;
   margin: 20px;
   color: #860680;
 }
@@ -188,6 +195,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-left: 10px;
+  width: 200px;
+  font-family: serif;
+}
+.servicios__lis li a {
+  text-decoration: none;
 }
 
 .pie-pag {
