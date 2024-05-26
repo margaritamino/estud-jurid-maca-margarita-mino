@@ -1,12 +1,15 @@
 /*index aside*/
 .servicios{
     @include flex-w;
+    flex-direction: column;
     @include margentb (50px, 20px);
     &__titulo-serv
        h2{
       flex-wrap: wrap;
-      @include margentb (50px, 20px);      
-      color: $titulo-secundario;      
+      @include margentb (120px, 20px);      
+      color: $titulo-secundario;   
+      font-family: serif;
+      font-weight: bold;   
     }
     &__asesoramiento 
     p{
@@ -14,6 +17,16 @@
       @include margentb (none, 20px);
      
     }
+
+    &__lis li a{
+      text-decoration: none;
+
+     }
+  }
+
+  .servicios-pag{
+    @include flex-w;    
+    @include margentb (50px, 20px);
 
     &__caja{
       @include flex-w;
@@ -34,14 +47,10 @@
       p{
         @include flex-w;
         margin-left: 10px;
-        width: 200px;
+        width: 400px;
         font-family: serif;
+        font-size: 25px;
       
        }
-       &__lis li a{
-        text-decoration: none;
-
-       }
-
-  }
+      }
 

@@ -1,6 +1,7 @@
 
 /*main cursos*/
 
+
 .titulos{ 
   display: flex;
   flex-direction: column;
@@ -10,8 +11,12 @@
     @include flex-w-c;
     @include m20;
     color: $tutulo-principal;
-    width: 1000px;
+    width: 400px;
     align-self: center;
+    font-family: serif;
+
+    
+
      
   }
 
@@ -19,7 +24,8 @@
     display: flex;
     @include m20;
     color: $titulo-secundario;
-    
+    font-family: serif;
+    font-weight: bold;
      
     }
   }
@@ -44,6 +50,93 @@
       
     }
    }
+   .cursos-pag{
+    display: flex;
+    flex-wrap: wrap;
+  
+    
+    &__color-recuadro{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      background-color: $suave;
+      width: 900px;
+      height: 700px;
+      border-radius: 10px;
+      padding: 20px 10px 1px 20px;
+      margin: 10px;
+
+      h4{
+        flex-wrap: wrap;  
+        align-self: center;       
+         font-family: serif;
+         font-weight: bold;
+         color: $titulo-secundario;
+         margin-bottom: 20px;
+         
+         
+       }
+      
+    &__items{
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      img{
+        width: map-get($dimension, chico);
+        border-radius: 10px;
+        margin-bottom: 20px;
+       }
+       button{          
+        width: 100px;
+        margin-left: 120px;
+        border-radius: 5px;
+       }
+
+        p{
+       display: flex;
+       flex-wrap: wrap;
+       font-family: arial;
+       font-size: 16px;
+       margin-left: 5px;
+       width: 800px;
+    
+  }
+
+    }
+     
+  }     
+    }
+
+    .contactos{ 
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      width: 1000px;
+    &__imag{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      margin-bottom: 100px;
+     
+      img{
+        @include flex-w;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        width: 50px;   
+      }
+
+       p{
+      width: 100px;
+      font-size: 20px;
+      margin-left: 30px;
+
+    }
+
+    }
+    }
+
+
+
 
 
   /*main nosotros*/

@@ -1,43 +1,28 @@
 /*Medias Query*/
 
-@media (max-width:768px)  {
-    .pagina-grid{
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.1fr 0.5fr 0.5fr 0.06fr;
-      grid-template-areas : 
-      "header header"
-      "main aside"
-      "main aside"
-      "footer footer"
-      ;
-  
-    }
+/*@media (max-width:768px)  {
+  .pagina-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 0.6fr;
+    grid-template-areas: 
+    "heade heade"
+    "main aside"
+    "main aside"
+    "footer footer";
+  }
 
-    .cursos-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.1fr 0.1fr 0.2fr;
-      grid-template-areas : 
-      "encab encab"
-      "curso curso"
-      "pie-cursos pie-cursos";
-      }
+  .logo img{
+    width: 200px;
+    border-radius: 50%;
 
+  }
 
-    .logo img{
-      width: 200px;
-      border-radius: 50%;
-  
-    }
+  .cursos{
+      display: flex;
+      flex-wrap: wrap;
+      width: 800px;
 
-    .titulos{
-    &__principal {
-     font-size: 190%;
-    }
-    }
-
-
-    .cursos{
     &__color-recuadro{
     background-color: $suave;
     width: 220px;
@@ -45,12 +30,14 @@
     padding: 20px 1px 20px 20px;
     margin: 10px;
 
-      &__imagen{
+     &__imagen{
       width: 180px;  
   }
 }
 }
   .servicios{
+    @include flex-w;
+       
   &__caja{
     @include flex-w;
     width: 290px;
@@ -58,7 +45,6 @@
     background-color: #860680;
     justify-content: center;
     border-radius: 10px;
-  }
   
   img {
     @include flex-w;
@@ -69,6 +55,10 @@
   p{
     font-size: 90%;
   }
+ 
+}
+
+ 
 }
 
   .pie-pag{
@@ -104,16 +94,27 @@
        }
      
        }
-       }
+
+       .cursos-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.2fr;
+        grid-template-areas : 
+        "encab encab"
+        "curso curso"
+        "pie-cursos pie-cursos"
+        }
+       }*/
   
   /*Width 576*/
 
-  @media(max-width:576px) {
+ /* @media(max-width:576px) {
     .pagina-grid{
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 1fr 0.2fr 0.1fr;
     grid-template-areas : 
-    "header"
+    "heade"
     "main"
     "aside"
     "footer";
@@ -128,6 +129,12 @@
       "curso"
       "pie-cursos";
       }
+
+    .cursos{
+      display: flex;
+      flex-wrap: wrap;
+      width: 800px;
+    }
 
   .servicios{
   &__titulo-serv 
@@ -173,7 +180,7 @@
 
       @include flex-w;
       margin-left: 100px;
-      width: 100px;       
+      width: 100px;       npm run watch-css
       }    
     &__inst {
       @include margentl (20px, 70px);
@@ -201,4 +208,4 @@
       
        }
       
- }
+ }*/

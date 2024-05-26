@@ -3,27 +3,27 @@
 .pagina-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 0.7fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 50px;
-    grid-template-areas : 
-    "header header header"
+    grid-template-rows: 0.1fr 1fr 0.5fr 0.6fr;
+    grid-template-areas: 
+    "heade heade heade"
     "main main aside"
     "main main aside"
-    "footer footer footer"
+    "footer footer footer";
   }
 
-  header{
-    grid-area: header;
+  .pagina-grid header{
+    grid-area: heade;
   }
 
-  main{
+  .pagina-grid main{
     grid-area: main;
   }
 
-  aside{
+  .pagina-grid aside{
     grid-area: aside;
   }
 
-  footer{
+  .pagina-grid footer{
     grid-area: footer;
   }
 
@@ -34,7 +34,7 @@
   grid-template-areas : 
   "encab encab encab"
   "curso curso curso"
-  "pie-cursos pie-cursos pie-cursos"
+  "pie-cursos pie-cursos pie-cursos";
   }
 
   .cursos-grid header{
@@ -56,7 +56,7 @@
     grid-template-areas : 
     "encab encab encab"
     "serv serv serv"
-    "pie-cursos pie-cursos pie-cursos"
+    "pie-cursos pie-cursos pie-cursos";
     }
   
     .servicios-grid header{
@@ -78,7 +78,7 @@
     grid-template-areas : 
     "encab"
     "nosotros"
-    "pie-nosotros"
+    "pie-nosotros";
     }
   
     .nosotros-grid header{
