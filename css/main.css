@@ -32,7 +32,7 @@
 
 .cursos-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.7fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 1fr 0.2fr;
   grid-template-areas: "encab encab encab" "curso curso curso" "pie-cursos pie-cursos pie-cursos";
 }
@@ -51,9 +51,9 @@
 
 .servicios-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 1fr 0.2fr;
-  grid-template-areas: "encab encab encab" "serv serv serv" "pie-cursos pie-cursos pie-cursos";
+  grid-template-areas: "encab encab" "serv  serv" "pie-cursos pie-cursos";
 }
 
 .servicios-grid header {
@@ -120,12 +120,15 @@
   width: 400px;
   align-self: center;
   font-family: serif;
+  font-size: 30px;
 }
 .titulos__secundario {
   display: flex;
   margin: 20px;
+  width: 400px;
   color: #860680;
   font-family: serif;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -146,6 +149,17 @@
 }
 .cursos__color-recuadro__imagen img {
   width: 100%;
+  border-radius: 10px;
+}
+.cursos__color-recuadro p {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: serif;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 250px;
 }
 
 .cursos-pag {
@@ -157,7 +171,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #f7cbf4;
-  width: 900px;
+  width: 700px;
   height: 700px;
   border-radius: 10px;
   padding: 20px 10px 1px 20px;
@@ -167,9 +181,11 @@
   flex-wrap: wrap;
   align-self: center;
   font-family: serif;
+  font-size: 20px;
   font-weight: bold;
   color: #860680;
   margin-bottom: 20px;
+  width: 500px;
 }
 .cursos-pag__color-recuadro__items {
   flex-wrap: wrap;
@@ -184,27 +200,30 @@
   width: 100px;
   margin-left: 120px;
   border-radius: 5px;
+  font-family: serif;
+  font-size: 16px;
 }
 .cursos-pag__color-recuadro__items p {
   display: flex;
   flex-wrap: wrap;
-  font-family: arial;
+  font-family: serif;
   font-size: 16px;
   margin-left: 5px;
-  width: 800px;
+  width: 600px;
 }
 
 .contactos {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  width: 1000px;
+  justify-content: center;
+  width: 100%;
 }
 .contactos__imag {
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
   margin-bottom: 100px;
+  width: 250px;
 }
 .contactos__imag img {
   display: flex;
@@ -215,7 +234,8 @@
 }
 .contactos__imag p {
   width: 100px;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: serif;
   margin-left: 30px;
 }
 
@@ -224,11 +244,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 .nosotros p {
   font-style: italic;
   font-weight: bold;
   justify-content: center;
+  font-size: 18px;
 }
 
 /*index aside*/
@@ -241,19 +263,26 @@
 }
 .servicios__titulo-serv h2 {
   flex-wrap: wrap;
-  margin-top: 120px;
+  margin-top: 80px;
   margin-bottom: 20px;
   color: #860680;
   font-family: serif;
   font-weight: bold;
+  font-size: 20px;
 }
 .servicios__asesoramiento p {
   flex-wrap: wrap;
   margin-top: none;
   margin-bottom: 20px;
+  width: 300px;
+  font-family: serif;
+  font-size: 20px;
 }
 .servicios__lis li a {
   text-decoration: none;
+  width: 300px;
+  font-family: serif;
+  font-size: 18px;
 }
 
 .servicios-pag {
@@ -284,7 +313,7 @@
   margin-left: 10px;
   width: 400px;
   font-family: serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .pie-pag {
@@ -292,11 +321,15 @@
   flex-wrap: wrap;
   margin-top: 70px;
   margin-bottom: none;
+  justify-content: center;
+  width: 100%;
+}
+.pie-pag__fimg {
+  width: 130px;
 }
 .pie-pag__fimg img {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 300px;
   width: 130px;
 }
 .pie-pag__inst {
@@ -325,212 +358,240 @@
 }
 
 /*Medias Query*/
-/*@media (max-width:768px)  {
-  .pagina-grid{
+@media (max-width: 768px) {
+  .pagina-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 0.6fr;
-    grid-template-areas: 
-    "heade heade"
-    "main aside"
-    "main aside"
-    "footer footer";
+    grid-template-rows: 0.1fr 1fr 1fr 0.3fr;
+    grid-template-areas: "heade heade" "main aside" "main aside" "footer footer";
   }
-
-  .logo img{
+  .cursos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 2fr 0.2fr;
+    grid-template-areas: "encab encab" "curso curso" "pie-cursos pie-cursos";
+  }
+  .logo img {
     width: 200px;
     border-radius: 50%;
-
   }
-
-  .cursos{
-      display: flex;
-      flex-wrap: wrap;
-      width: 800px;
-
-    &__color-recuadro{
-    background-color: $suave;
+  .titulos__principal {
+    font-size: 29px;
+  }
+  .titulos__secundario {
+    font-size: 20px;
+  }
+  .cursos {
+    width: 450px;
+  }
+  .cursos__color-recuadro {
+    width: 300px;
+    padding: 20px 3px 20px 20px;
+  }
+  .cursos__color-recuadro__imagen {
+    width: 260px;
+    margin-right: 10px;
+  }
+  .cursos__color-recuadro p {
+    font-size: 14px;
+    width: 200px;
+  }
+  .cursos-pag__color-recuadro {
+    width: 550px;
+    height: 600px;
+  }
+  .cursos-pag__color-recuadro h4 {
+    font-size: 18px;
+    width: 100%;
+  }
+  .cursos-pag__color-recuadro__items {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cursos-pag__color-recuadro__items img {
     width: 220px;
     border-radius: 10px;
-    padding: 20px 1px 20px 20px;
-    margin: 10px;
-
-     &__imagen{
-      width: 180px;  
+    margin-bottom: 15px;
   }
-}
-}
-  .servicios{
-    @include flex-w;
-
-  &__caja{
-    @include flex-w;
-    width: 290px;
+  .cursos-pag__color-recuadro__items button {
+    width: 80px;
+    margin-left: 60px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .cursos-pag__color-recuadro__items p {
+    font-size: 14px;
     margin-left: 5px;
-    background-color: #860680;
-    justify-content: center;
-    border-radius: 10px;
-
-  img {
-    @include flex-w;
+    width: 500px;
+  }
+  .servicios__titulo-serv h2 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  .servicios__asesoramiento p {
+    width: 200px;
+    font-size: 16px;
+  }
+  .servicios__lis li a {
+    text-decoration: none;
+    width: 150px;
+    font-size: 16px;
+  }
+  .servicios-pag__caja {
+    width: 280px;
+  }
+  .servicios-pag__caja img {
     width: 250px;
-    border-radius: 10px;
-
   }
-  p{
-    font-size: 90%;
+  .servicios-pag p {
+    width: 300px;
+    font-size: 16px;
   }
-
-}
-
-
-}
-
-  .pie-pag{
-    @include flex-w;
-    @include margentb (70px, none);
-
-  &__fimg img {
-    @include flex-w;
-    margin-left: 200px;
+  .contactos__imag {
+    width: 180px;
+  }
+  .contactos__imag img {
+    width: 40px;
+  }
+  .contactos__imag p {
+    font-size: 20Px;
+  }
+  .nosotros p {
+    font-size: 14px;
+  }
+  .pie-pag__fimg img {
     width: 110px;
-  }  
-
-    &__inst {
-      @include margentl (50px, 70px);
-    img{
-      @include im-b-w(10%, 30px);
-
-       }
-      }
-      &__face {
-        @include margentl (50px, 10px);
-        img{
-          @include im-b-w(10%, 30px);
-
-       }
-       }
-       &__whats {
-        @include margentl (50px, 10px);
-        img{
-          @include im-b-w(10%, 30px);
-
-       }
-       }
-
-       }
-
-       .cursos-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 0.2fr;
-        grid-template-areas : 
-        "encab encab"
-        "curso curso"
-        "pie-cursos pie-cursos"
-        }
-       }*/
+  }
+  .pie-pag__inst {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
 /*Width 576*/
-/* @media(max-width:576px) {
-    .pagina-grid{
+@media (max-width: 576px) {
+  .pagina-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 0.2fr 0.1fr;
-    grid-template-areas : 
-    "heade"
-    "main"
-    "aside"
-    "footer";
-
+    grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr;
+    grid-template-areas: "heade" "main" "aside" "footer";
   }
-    .cursos-grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.1fr 0.1fr 0.2fr;
-      grid-template-areas : 
-      "encab"
-      "curso"
-      "pie-cursos";
-      }
-
-    .cursos{
-      display: flex;
-      flex-wrap: wrap;
-      width: 800px;
-    }
-
-  .servicios{
-  &__titulo-serv 
-  h2{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 150px;
-    color: #860680;
-
+  .cursos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas: "encab" "curso" "pie-cursos";
   }
-}
-  .titulos{
-  &__principal {
-    font-size: 160%;
-   }
-  &__secundario {
-    font-size: 120%;
-   }
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas: "encab encab" "serv  serv" "pie-cursos pie-cursos";
   }
-
-   .servicios{
-   &__caja{
-    @include flex-w;
-    width: 250px;
-    margin-left: 5px;
-    background-color: #860680;
-    justify-content: center;
-    border-radius: 10px;
-   img{
-    @include flex-w;
+  .encabezado {
+    width: 100%;
+  }
+  .logo img {
+    width: 180px;
+    border-radius: 50%;
+  }
+  .titulos__principal {
+    font-size: 24px;
+  }
+  .titulos__secundario {
+    font-size: 18px;
+  }
+  .cursos {
+    width: 450px;
+  }
+  .cursos__color-recuadro {
+    width: 280px;
+    padding: 20px 3px 20px 20px;
+  }
+  .cursos__color-recuadro__imagen {
+    width: 240px;
+    margin-right: 10px;
+  }
+  .cursos__color-recuadro p {
+    font-size: 12px;
+    width: 180px;
+  }
+  .cursos-pag__color-recuadro {
+    width: 520px;
+    height: 550px;
+  }
+  .cursos-pag__color-recuadro h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+  .cursos-pag__color-recuadro__items {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cursos-pag__color-recuadro__items img {
     width: 220px;
     border-radius: 10px;
-
+    margin-bottom: 15px;
+  }
+  .cursos-pag__color-recuadro__items button {
+    width: 80px;
+    margin-left: 60px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .cursos-pag__color-recuadro__items p {
+    font-size: 12px;
+    margin-left: 5px;
+    width: 470px;
+  }
+  .servicios__titulo-serv h2 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  .servicios__asesoramiento p {
+    width: 200px;
+    font-size: 16px;
+  }
+  .servicios__lis li a {
+    width: 150px;
+    font-size: 16px;
+  }
+  .servicios-pag__caja {
+    width: 280px;
+  }
+  .servicios-pag__caja img {
+    width: 250px;
+  }
+  .servicios-pag p {
+    width: 200px;
+    font-size: 14px;
+  }
+  .contactos {
+    flex-direction: column;
+  }
+  .contactos__imag {
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .contactos__imag img {
+    width: 35px;
+  }
+  .contactos__imag p {
+    font-size: 20Px;
+  }
+  .nosotros p {
+    font-size: 14px;
+  }
+  .pie-pag {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .pie-pag__fimg img {
+    width: 110px;
+  }
+  .pie-pag__inst {
+    margin-left: 50px;
   }
 }
-}
-  .pie-pag{
-    @include flex-w;
-    @include margentb (70px, none);
-
-
-    &__fimg img{
-
-      @include flex-w;
-      margin-left: 100px;
-      width: 100px;       npm run watch-css
-      }    
-    &__inst {
-      @include margentl (20px, 70px);
-    img{
-      @include im-b-w(10%, 20px);
-
-       }
-      }
-      &__face {
-        @include margentl (20px, 10px);
-        img{
-      @include im-b-w(10%, 20px);
-
-       }
-       }
-       &__whats {
-        @include margentl (20px, 10px);
-        img{
-       @include im-b-w(10%, 20px);
-
-       }
-       }
-
-
-
-       }
-
- }*/
 
 /*# sourceMappingURL=main.css.map */

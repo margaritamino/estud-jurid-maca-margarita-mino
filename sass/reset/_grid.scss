@@ -29,7 +29,7 @@
 
 .cursos-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 0.7fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 1fr 0.2fr;
   grid-template-areas : 
   "encab encab encab"
@@ -51,12 +51,12 @@
 
   .servicios-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 1fr 0.2fr;
     grid-template-areas : 
-    "encab encab encab"
-    "serv serv serv"
-    "pie-cursos pie-cursos pie-cursos";
+    "encab encab"
+    "serv  serv"
+    "pie-cursos pie-cursos";
     }
   
     .servicios-grid header{
@@ -92,5 +92,7 @@
     .nosotros-grid footer{
       grid-area: pie-nosotros;
     }
+
+ 
 
  
