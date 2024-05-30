@@ -1,20 +1,31 @@
 
 /*main cursos*/
 
+
 .titulos{ 
-  &__principal{
+  display: flex;
+  flex-direction: column;
+    &__principal{
     @include flex-w-c;
     @include m20;
     color: $tutulo-principal;
-   
+    width: 400px;
+    align-self: center;
+    font-family: serif;  
+    font-size: 30px;   
   }
 
   &__secundario{
+    display: flex;
     @include m20;
+    width: 400px;
     color: $titulo-secundario;
-  
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+     
     }
-  }
+}
   
   .cursos{
     @include flex-w-c;
@@ -29,21 +40,128 @@
         width: map-get($dimension, chico);
       
         img{
-          width: 100%
-        }}
+          width: 100%;
+          border-radius: 10px;
 
+        }}
+     p{
+      display: flex;
+      flex-wrap: wrap;
+      font-family: serif;
+      font-size: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 5px;
+      width: 250px;
+     }
      
       
     }
    }
+   .cursos-pag{
+    display: flex;
+    flex-wrap: wrap;
+  
+  
+    
+    &__color-recuadro{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      background-color: $suave;
+      width: 700px;
+      height: 700px;
+      border-radius: 10px;
+      padding: 20px 10px 1px 20px;
+      margin: 10px;
+
+      h4{
+        flex-wrap: wrap;  
+        align-self: center;       
+         font-family: serif;
+         font-size: 20px;
+         font-weight: bold;
+         color: $titulo-secundario;
+         margin-bottom: 20px;
+         width: 500px;
+              
+       }
+      
+    &__items{
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      img{
+        width: map-get($dimension, chico);
+        border-radius: 10px;
+        margin-bottom: 20px;
+       }
+       button{          
+        width: 100px;
+        margin-left: 120px;
+        border-radius: 5px;
+        font-family: serif;
+        font-size: 16px;
+       }
+
+        p{
+       display: flex;
+       flex-wrap: wrap;
+       font-family: serif;
+       font-size: 16px;
+       margin-left: 5px;
+       width: 600px;
+    
+  }
+
+    }
+     
+  }     
+    }
+
+    .contactos{ 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    &__imag{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      width: 250px;
+     
+      img{
+        @include flex-w;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        width: 50px;   
+      }
+
+       p{
+      width: 100px;
+      font-size: 25px;
+      font-family: serif;
+      margin-left: 30px;
+
+    }
+
+    }
+    }
+
+
+
 
 
   /*main nosotros*/
   .nosotros{
     @include flex-w-c;  
+    width: 100%;
+
     p{  
       font-style: italic;
       font-weight: bold;
-      justify-content: center;    
+      justify-content: center;  
+      font-size: 18px;  
   }
 }

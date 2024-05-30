@@ -2,38 +2,37 @@
 .pie-pag{
    @include flex-w;
    @include margentb (70px, none);
+   justify-content: center;
+   width: 100%;
        
 
-    &__fimg img{
+    &__fimg{
+      width: 130px;
+    img{
 
       @include flex-w;
-      margin-left: 300px;
-      width: 130px;       
-      }    
+      width: 130px;
+      }  
+    }  
     &__inst {
-      margin-top: 50px;
-      margin-left: 100px;
+       @include margentl (50px, 100px);
     img{
-      border-radius: 10%;
-      width: 30px;   
+      @include im-b-w(10%, 30px);  
       
        }
       }
       &__face {
-        margin-top: 50px;
-        margin-left: 10px;
+        @include margentl (50px, 10px);
+ 
         img{
-        border-radius: 10%;
-        width: 30px;
+          @include im-b-w(10%, 30px);
 
        }
        }
        &__whats {
-        margin-top: 50px;
-        margin-left: 10px;
+      @include margentl (50px, 10px);
         img{
-        border-radius: 10%;
-        width: 30px;
+       @include im-b-w(10%, 30px);
 
        }
        }
