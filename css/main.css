@@ -147,7 +147,7 @@
   margin: 10px;
 }
 .cursos__color-recuadro__imagen {
-  width: 280px;
+  width: 270px;
 }
 .cursos__color-recuadro__imagen img {
   width: 100%;
@@ -194,7 +194,7 @@
   flex-direction: row;
 }
 .cursos-pag__color-recuadro__items img {
-  width: 280px;
+  width: 270px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -442,7 +442,7 @@
     font-size: 16px;
   }
   .servicios-pag__caja {
-    width: 280px;
+    width: 270px;
   }
   .servicios-pag__caja img {
     width: 250px;
@@ -507,7 +507,7 @@
     font-size: 18px;
   }
   .cursos {
-    width: 450px;
+    width: 320px;
   }
   .cursos__color-recuadro {
     width: 280px;
@@ -521,8 +521,11 @@
     font-size: 12px;
     width: 180px;
   }
+  .cursos-pag {
+    width: 100%;
+  }
   .cursos-pag__color-recuadro {
-    width: 420px;
+    width: 310px;
     height: 600px;
   }
   .cursos-pag__color-recuadro h4 {
@@ -534,20 +537,20 @@
     flex-direction: row;
   }
   .cursos-pag__color-recuadro__items img {
-    width: 220px;
+    width: 210px;
     border-radius: 10px;
     margin-bottom: 15px;
   }
   .cursos-pag__color-recuadro__items button {
-    width: 80px;
-    margin-left: 60px;
+    width: 60px;
+    margin-left: 5px;
     border-radius: 5px;
     font-size: 14px;
   }
   .cursos-pag__color-recuadro__items p {
-    font-size: 12px;
+    font-size: 10px;
     margin-left: 2px;
-    width: 380px;
+    width: 280px;
   }
   .servicios__titulo-serv h2 {
     margin-top: 80px;
@@ -562,7 +565,7 @@
     font-size: 16px;
   }
   .servicios-pag__caja {
-    width: 280px;
+    width: 270px;
   }
   .servicios-pag__caja img {
     width: 250px;
