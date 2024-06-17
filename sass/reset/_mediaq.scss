@@ -32,10 +32,12 @@
 
   .titulos{
   &__principal{
+    width: 200px;
     font-size: 29px;
   }
   &__secundario{
     font-size: 20px;
+    width: 200px;
   }
 }
 
@@ -219,10 +221,13 @@
     
       .titulos{
       &__principal{
+        width: 200px;
         font-size: 24px;
       }
       &__secundario{
+        width: 150px;
         font-size: 18px;
+
       }
     }
     
@@ -251,8 +256,8 @@
     
       &__color-recuadro{
     
-        width: 520px;
-        height: 550px;
+        width: 420px;
+        height: 600px;
      
     
         h4{
@@ -284,8 +289,8 @@
           p{
      
          font-size: 12px;
-         margin-left: 5px;
-         width: 470px;
+         margin-left: 2px;
+         width: 380px;
       
     }
     

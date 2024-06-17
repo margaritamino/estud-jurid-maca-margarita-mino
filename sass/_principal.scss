@@ -17,6 +17,7 @@
 
   &__secundario{
     display: flex;
+    flex-wrap: wrap;
     @include m20;
     width: 400px;
     color: $titulo-secundario;
